@@ -10,7 +10,14 @@ class BankAccount
     end    
     
     def deposit(amount)
-      balance += amount
+     # balance += amount
+      
+       #   amount = get_amount
+    #  if  amount >= @balance
+          @balance += amount
+   #   end      
+  
+    
         
     end
     
