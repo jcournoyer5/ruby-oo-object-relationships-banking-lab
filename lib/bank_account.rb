@@ -16,23 +16,22 @@ class BankAccount
     #  if  amount >= @balance
           @balance += amount
    #   end      
-  
-    
         
     end
     
-    def display_blance
-        self.balance
+    def display_balance
+      "Your balance is $#{@balance}."
     end
     
     def valid?
-        if @status == "open" && balance.self > 0
-            "valid"
-        end    
+        status == "open" && balance > 0
+           #"valid"
+        #end    
     end   
     
     def close_account
-        BankAccount.clear.all
+        #BankAccount.status = "closed"
+        self.status = "closed"
     end    
         
 
