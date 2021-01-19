@@ -9,12 +9,13 @@ class BankAccount
         @status = "open"
     end    
     
-    def deposit
+    def deposit(amount)
+      balance += amount
         
     end
     
     def display_blance
-        @balance
+        self.balance
     end
     
     def valid?
